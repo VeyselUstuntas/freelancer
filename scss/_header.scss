@@ -21,13 +21,14 @@
 
                 li {
                     padding: 1rem 2rem;
-
                     a {
                         color: #fff;
                         text-transform: uppercase;
                         border-bottom: .3rem transparent solid;
                         padding-bottom: .5rem;
                         transition: border-color .5s;
+                        margin-right: 1rem;
+
                         &:hover {
                             border-color: variables.$medium-color;
                         }

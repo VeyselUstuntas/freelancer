@@ -1,0 +1,51 @@
+@use 'variables';
+
+#home {
+    // home section a
+
+    &__a {
+        .skils {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            i {
+                color: variables.$primary-color;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__b {
+        .profile {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            &>div:nth-child(odd) {
+                background-color: variables.$light-color;
+            }
+
+            &>div:nth-child(even) {
+                background-color: variables.$medium-color;
+            }
+
+            ul {
+                padding: 2rem;
+            }
+
+            li {
+                &.title {
+                    font-size: 1.8rem;
+                }
+
+                &.number {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+
+}
