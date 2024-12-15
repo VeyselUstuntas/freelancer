@@ -1,0 +1,281 @@
+@use 'variables';
+
+@media(max-width:768px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    //header
+    #header{
+        &__home{
+            height: 100%;
+
+            .main-nav{
+                flex-direction: column;
+
+                &__logo{
+                    justify-self: center;
+                }
+
+                &__items{
+                    flex-direction: row;
+                    justify-content: center;
+                    a{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .header-content{
+                padding-top: 1rem;
+
+                h1 {
+                    font-size: 2rem;
+                    line-height: 1.5;
+
+                }
+            }
+        }
+    }
+
+    //home
+    #home {
+        &__a {
+            .skils {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__b {
+            .profile {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        &__c {
+            .process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    // footer
+    #main-footer {
+        .footer-content {
+            flex-direction: column;
+
+            .social-icon {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    // about
+
+    #about {
+        &-a {
+            .info {
+                grid-template-columns: repeat(2, 1fr);
+
+                &__image {
+                    width: 85%;
+                    justify-self: center;
+
+                }
+            }
+        }
+
+        &-c {
+            .about-logos {
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+
+                img {
+                    width: 40%;
+                    justify-self: center;
+
+                }
+            }
+        }
+    }
+
+    // projects
+
+    #projects {
+        .items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    // contact
+
+    #contact {
+        &-a {
+            .form-fields {
+                grid-template-areas:
+                    'name'
+                    'email'
+                    'subject'
+                    'phone'
+                    'message'
+                    'button';
+            }
+        }
+
+        &-b {
+            .info {
+                grid-template-columns: repeat(3, 1fr);
+                padding: .2rem;
+
+                div{
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(max-width:576px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    //header
+    #header{
+        &__home{
+            height: 100%;
+
+            .main-nav{
+                flex-direction: column;
+
+                &__logo{
+                    justify-self: center;
+                }
+
+                &__items{
+                    flex-direction: row;
+                    justify-content: center;
+                    a{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .header-content{
+                padding-top: 1rem;
+
+                h1 {
+                    font-size: 2rem;
+                    line-height: 1.5;
+
+                }
+            }
+        }
+    }
+
+    //home
+    #home {
+        &__a {
+            .skils {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__b {
+            .profile {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        &__c {
+            .process {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // footer
+    #main-footer {
+        .footer-content {
+            flex-direction: column;
+
+            .social-icon {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    // about
+
+    #about {
+        &-a {
+            .info {
+                grid-template-columns: 1fr;
+
+                &__image {
+                    width: 60%;
+                    justify-self: center;
+
+                }
+            }
+        }
+
+        &-c {
+            .about-logos {
+                grid-template-columns: 1fr;
+                justify-content: center;
+
+                img {
+                    width: 40%;
+                    justify-self: center;
+
+                }
+            }
+        }
+    }
+
+    // projects
+
+    #projects {
+        .items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    // contact
+
+    #contact {
+        &-a {
+            .form-fields {
+                grid-template-areas:
+                    'name'
+                    'email'
+                    'subject'
+                    'phone'
+                    'message'
+                    'button';
+            }
+        }
+
+        &-b {
+            .info {
+                grid-template-columns: 1fr;
+                padding: .2rem;
+
+                div{
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+}
