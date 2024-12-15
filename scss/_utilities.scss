@@ -49,15 +49,15 @@ input[class^='btn-']:hover {
 
 .bg {
     &-primary {
+        background-color: variables.$primary-color;
+    }
+
+    &-dark {
         background-color: variables.$dark-color;
     }
 
-    &-primary {
-        background-color: variables.$dark-color;
-    }
-
-    &-primary {
-        background-color: variables.$dark-color;
+    &-light {
+        background-color: variables.$light-color;
     }
 }
 

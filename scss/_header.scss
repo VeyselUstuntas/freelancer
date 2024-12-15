@@ -1,46 +1,54 @@
 @use 'variables';
 
+
+%main_nav {
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+
+        &__logo {
+            width: 7rem;
+            height: 7rem;
+        }
+
+        &__items {
+            display: flex;
+
+            li {
+                padding: 1rem 2rem;
+
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-bottom: .3rem transparent solid;
+                    padding-bottom: .5rem;
+                    transition: border-color .5s;
+                    margin-right: 1rem;
+
+                    &:hover {
+                        border-color: variables.$medium-color;
+                    }
+
+                    &.active {
+                        border-color: variables.$primary-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
 #header {
+
     &__home {
         background: variables.$bg-image no-repeat center right/cover;
         height: 100vh;
         color: #fff;
 
-        .main-nav {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 1rem;
-
-            &__logo {
-                width: 7rem;
-                height: 7rem;
-            }
-
-            &__items {
-                display: flex;
-
-                li {
-                    padding: 1rem 2rem;
-                    a {
-                        color: #fff;
-                        text-transform: uppercase;
-                        border-bottom: .3rem transparent solid;
-                        padding-bottom: .5rem;
-                        transition: border-color .5s;
-                        margin-right: 1rem;
-
-                        &:hover {
-                            border-color: variables.$medium-color;
-                        }
-
-                        &.active {
-                            border-color: variables.$primary-color;
-                        }
-                    }
-                }
-
-            }
-        }
+        @extend %main_nav;
 
         .header-content {
             text-align: center;
@@ -54,6 +62,21 @@
 
         .typewrite {
             display: block;
+        }
+    }
+
+    &__inner {
+        background: variables.$bg-image no-repeat 40% 20% / cover;
+        height: 5.5rem;
+        color: #fff;
+        border-bottom: .3rem solid variables.$primary-color;
+        @extend %main_nav;
+
+        .main-nav{
+            &__logo{
+                width: 4rem;
+                height:100%;
+            }
         }
     }
 }
