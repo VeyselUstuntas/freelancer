@@ -24,7 +24,7 @@
 
     &-b{
         color: #fff;
-
+        margin-bottom: 1rem;
         .progress-bars{
             h4{
                 text-align: start;
@@ -43,6 +43,43 @@
                 text-align: center;
                 background-color: variables.$primary-color;
                 border-radius: .5rem;
+            }
+        }
+    }
+
+    &-c{
+        .about-logos{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-items: center;
+
+            img{
+                width: 70%;
+            }
+        }
+    }
+
+    &-d{
+        .referances{
+            ul{
+                display: flex;
+                list-style: none;
+                margin-top: 1rem;
+                align-items: center;
+            }
+
+            p{
+                border: .1rem solid variables.$medium-color;
+                border-radius: .5rem;
+                padding: .5rem;
+            }
+
+            img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                padding-right: .5rem;
             }
         }
     }

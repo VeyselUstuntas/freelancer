@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"> 
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -23,7 +24,7 @@
                 <img src="img/logo.png" alt="" class="main-nav__logo">
                 <ul class="main-nav__items">
                     <li>
-                        <a href="index.html" >Home</a>
+                        <a href="index.html">Home</a>
                         <a href="about.html" class="active">About</a>
                         <a href="projects.html">Projects</a>
                         <a href="contact.html">Contact</a>
@@ -41,7 +42,8 @@
             <h2 class="section-title">About Me</h2>
             <div class="border-bottom"></div>
             <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At in placeat accusamus adipisci fugiat! Recusandae at architecto error maxime fugit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At in placeat accusamus adipisci fugiat!
+                Recusandae at architecto error maxime fugit.
             </p>
 
             <div class="info">
@@ -49,14 +51,15 @@
                 <div class="info__bio">
                     <h3>Lorem ipsum dolor sit amet.</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem nisi eum enim laborum est ipsa cupiditate atque possimus rerum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem nisi eum enim laborum est
+                        ipsa cupiditate atque possimus rerum.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- about b -->
     <section id="about-b" class="text-center bg-dark py-2">
         <div class="container">
             <h2 class="section-title">What I Know</h2>
@@ -85,6 +88,73 @@
         </div>
     </section>
 
+    <!-- about c -->
+    <section id="about-c" class="bg-light py-2">
+        <div class="container">
+            <div class="about-logos">
+                <img src="img/joomla.png" alt="">
+                <img src="img/woocommerce.png" alt="">
+                <img src="img/wordpress.png" alt="">
+                <img src="img/wix.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- about d -->
+    <section id="about-d" class="py-2  text-center">
+        <div class="container">
+            <h2 class="section-title">Referances</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <div class="referances owl-carousel owl-theme">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur odio consequatur ipsa a
+                        aliquam optio temporibus? Tenetur, assumenda minus?
+                    </p>
+                    <ul>
+                        <li><img src="img/user-1.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur odio consequatur ipsa a
+                        aliquam optio temporibus? Tenetur, assumenda minus?
+                    </p>
+                    <ul>
+                        <li><img src="img/user-2.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur odio consequatur ipsa a
+                        aliquam optio temporibus? Tenetur, assumenda minus?
+                    </p>
+                    <ul>
+                        <li><img src="img/user-3.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur odio consequatur ipsa a
+                        aliquam optio temporibus? Tenetur, assumenda minus?
+                    </p>
+                    <ul>
+                        <li><img src="img/user-4.jpeg" alt=""></li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
 
@@ -100,6 +170,30 @@
         </div>
     </footer>
 
+
+    <script src="js/jquery.min.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
